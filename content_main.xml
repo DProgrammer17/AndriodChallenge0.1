@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/AndelaLogo"
+        android:layout_width="376dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Picture"
+        app:layout_constraintBottom_toTopOf="@+id/Alc_Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/andela_logo" />
+
+    <TextView
+        android:id="@+id/Alc_Header"
+        android:layout_width="309dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="WELCOME TO ALC 4.0"
+        android:textColor="#0E45EB"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/AndelaDesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AndelaLogo"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/AndelaDesign"
+        android:layout_width="235dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Alc_Header"
+        app:srcCompat="@drawable/kissclipart_andela_logo_clipart" />
+
+    <Button
+        android:id="@+id/About_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#03A9F4"
+        android:text="ABOUT US"
+        app:layout_constraintBottom_toTopOf="@+id/Profile_Button"
+        app:layout_constraintStart_toEndOf="@+id/AndelaDesign"
+        app:layout_constraintTop_toBottomOf="@+id/Alc_Header"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Button
+        android:id="@+id/Profile_Button"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#03A9F4"
+        android:text="PROFILE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/AndelaDesign"
+        app:layout_constraintTop_toBottomOf="@+id/AndelaLogo"
+        app:layout_constraintVertical_bias="0.845" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Profile_Activity1"
+    tools:showIn="@layout/activity_profile_1">
+
+    <ViewFlipper
+        android:id="@+id/profile_flipper1"
+        android:layout_width="367dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="148dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/profile_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_flipper" />
+
+    <TextView
+        android:id="@+id/profile_header"
+        android:layout_width="108dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="424dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="PROFILE"
+        android:textColor="#27030F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ImageView
+        android:id="@+id/text_icon_name2"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_header"
+        app:srcCompat="@drawable/developer_illustration" />
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/andriod_icon"
+        app:srcCompat="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/slack_icon"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_icon"
+        app:srcCompat="@drawable/slack" />
+
+    <ImageView
+        android:id="@+id/mail_icon"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_icon"
+        app:srcCompat="@drawable/mail" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_icon_name2"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="22dp"
+        android:text="Chevron Drive"
+        app:layout_constraintBottom_toTopOf="@+id/mail_text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text2" />
+
+    <TextView
+        android:id="@+id/track_text"
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="22dp"
+        android:text="Andriod Track"
+        app:layout_constraintBottom_toTopOf="@+id/phone_text2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/slack_text"
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="172dp"
+        android:text="Dyonisis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slack_icon" />
+
+    <TextView
+        android:id="@+id/phone_text2"
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="23dp"
+        android:text="08142262317"
+        app:layout_constraintBottom_toTopOf="@+id/slack_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_icon" />
+
+    <TextView
+        android:id="@+id/mail_text2"
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="21dp"
+        android:text="enochagunbiade@gmail.com"
+        app:layout_constraintBottom_toTopOf="@+id/track_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mail_icon" />
+
+    <TextView
+        android:id="@+id/name_text2"
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="15dp"
+        android:text="Agunbiade Ebunoluwa Enoch"
+        app:layout_constraintBottom_toTopOf="@+id/location_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_icon_name2"
+        app:layout_constraintTop_toBottomOf="@+id/profile_header" />
+
+    <ImageView
+        android:id="@+id/design_image"
+        android:layout_width="282dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slack_text"
+        app:srcCompat="@drawable/images_illustration" />
+
+    <ImageView
+        android:id="@+id/andriod_icon"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_icon"
+        app:layout_constraintEnd_toStartOf="@+id/track_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_icon"
+        app:srcCompat="@drawable/andriod" />
+
+
+</android.support.constraint.ConstraintLayout>
